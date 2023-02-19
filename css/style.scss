@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+div#container {
+    header {
+        width: 100%;
+        height: 12.5vh;
+
+        nav {
+            div#chicago {
+                font-size: 2em;
+                float: left;
+                margin-left: 1em;
+                //using line height property Set the line height for different <div> elements
+                line-height: 90px;
+            }
+
+            ul {
+                float: right;
+                margin-top: 1em;
+                margin-right: 2em;
+
+                li {
+                    display: inline-block;
+                    padding: 1em;
+                    cursor: pointer;
+                    transition: all 200ms linear;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        transition: all 100ms linear;
+                        font-size: 1em;
+                    }
+                }
+
+                li:hover {
+                    background-color: #000000;
+
+                    a {
+                        //using css color rgb pr
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+main {
+    div#container2 {
+        width: 100vw;
+        height: 100vh;
+        //using css-background
+        background-image: url("../images/homepage.jpg");
+        background-repeat: none;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+
+        h1 {
+            font-size: 5em;
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        div.box {
+            position: absolute;
+            background-color: black;
+            height: 100px;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            //using css-gradients
+            opacity: 60%;
+            transform: translate(-50%, -50%);
+           
+            
+        }
+
+        section.learnMore {
+            button {
+                position: absolute;
+                background-color: #b8a33f;
+                padding: 1em;
+                outline: none;
+                border: none;
+                // margin-left: 650px;
+                width: 15%;
+                height: 6%;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                
+                h2 {
+                    color: white;
+                    position: relative;
+                    font-weight: 400;
+                }
+            }
+        }
+
+
+    }
+}
+
+div {
+    footer {
+        width: 100%;
+        height: 12.5vh;
+        div.copy {
+            h3 {
+                position: absolute;
+                color: #b8a33f;
+                font-weight: 400;
+                left: 45%;
+                top: 115%;
+            }
+            ul {
+                display: flex;
+                list-style-type: none;
+                
+                li {
+                    width: 100px;
+                    height: 100px;
+                    //need a element to propery display items by using display block
+                    a {
+                        width: 100px;
+                        height: 100px;
+                        //block needed otherwise content will not show
+                        display: block;
+                        transition: all 200ms linear;
+                    }
+                    //after each image you can position your image by using numbered px units to show a spacific image 
+                    a#twitter {
+                        background: url("../images/icon-color.png") 0px 0px;
+                    }
+                    a#facebook {
+                        background: url("../images/icon-color.png")100px 0px;
+                    }
+                    a#insta {
+                        background: url("../images/icon-color.png")200px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
