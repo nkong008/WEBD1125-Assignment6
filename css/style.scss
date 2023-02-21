@@ -67,6 +67,7 @@ main {
 
         h1 {
             font-size: 5em;
+            //used text transform 
             text-transform: uppercase;
             color: white;
             position: absolute;
@@ -75,6 +76,7 @@ main {
             transform: translate(-50%, -50%);
             z-index: 0;
         }
+
         div.box {
             position: absolute;
             background-color: black;
@@ -86,8 +88,8 @@ main {
             //using css opacity/transparency
             opacity: 60%;
             transform: translate(-50%, -50%);
-           
-            
+
+
         }
 
         section.learnMore {
@@ -103,12 +105,14 @@ main {
                 top: 70%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                
-                
+
+
                 h2 {
                     color: white;
                     position: relative;
                     font-weight: 400;
+                    //using text transfrom white space to create space around the text
+                    white-space: none;
                 }
             }
         }
@@ -123,6 +127,7 @@ div {
     footer {
         width: 100%;
         height: 12.5vh;
+
         div.copy {
             h3 {
                 position: absolute;
@@ -131,16 +136,18 @@ div {
                 left: 45%;
                 top: 115%;
             }
+
             ul {
                 position: absolute;
                 display: flex;
                 list-style-type: none;
                 top: 114%;
                 left: 80%;
-                
+
                 li {
                     width: 50px;
                     height: 50px;
+
                     //need a element to propery display items by using display block
                     a {
                         width: 50px;
@@ -148,16 +155,19 @@ div {
                         //block needed otherwise content will not show
                         display: block;
                         transition: all 200ms linear;
-    
+
                     }
+
                     //image sprites example
                     //after each image you can position your image by using numbered px units to show a spacific image 
                     a#twitter {
                         background: url("../images/socials-color.png") 0px 0px;
                     }
+
                     a#facebook {
                         background: url("../images/socials-color.png")50px 0px;
                     }
+
                     a#instagram {
                         background: url("../images/socials-color.png")100px 0px;
                     }
@@ -167,9 +177,11 @@ div {
                     a#twitter:hover {
                         background: url("../images/socials-bw.png") 0px 0px;
                     }
+
                     a#facebook:hover {
                         background: url("../images/socials-bw.png")50px 0px;
                     }
+
                     a#instagram:hover {
                         background: url("../images/socials-bw.png")100px 0px;
                     }
@@ -188,18 +200,20 @@ div#container3 {
     // background-image: url("../images/chicago.jpg");
     // background-repeat: none;
     background-image: linear-gradient(white, grey, rgb(95, 108, 122), rgb(52, 64, 65));
-    
+
     img {
         width: 1100px;
         height: 600px;
-        margin-left:175px;
+        margin-left: 175px;
     }
+
     h1 {
         color: white;
         text-align: center;
         padding: 30px;
 
     }
+
     p {
         color: white;
         //used text indent 
@@ -208,40 +222,44 @@ div#container3 {
         //using word spacing to add spacing to sentence for better readability
         word-spacing: 2px;
     }
+
     p.click {
         position: absolute;
-        text-indent:580px;
-        
+        text-indent: 580px;
+
     }
 
     section {
 
         button {
-                position: absolute;
-                background-color: #b8a33f;
-                padding: 1em;
-                outline: none;
-                border: none;
-                width: 15%;
-                height: 6%;
-                top: 130%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            position: absolute;
+            background-color: #b8a33f;
+            padding: 1em;
+            outline: none;
+            border: none;
+            width: 15%;
+            height: 6%;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
             h2 {
                 color: white;
                 position: relative;
                 font-weight: 400;
+                //using text transfrom white space to create space around the text
+                white-space: none;
             }
         }
     }
-    
+
 }
 
 div {
     footer.footer2 {
         width: 100%;
         height: 12.5vh;
+
         div.copy2 {
             h3 {
                 position: absolute;
@@ -250,16 +268,18 @@ div {
                 left: 45%;
                 top: 167%;
             }
+
             ul {
                 position: absolute;
                 display: flex;
                 list-style-type: none;
                 top: 167%;
                 left: 80%;
-                
+
                 li {
                     width: 50px;
                     height: 50px;
+
                     //need a element to propery display items by using display block
                     a {
                         width: 50px;
@@ -267,16 +287,19 @@ div {
                         //block needed otherwise content will not show
                         display: block;
                         transition: all 200ms linear;
-    
+
                     }
+
                     //image sprites example
                     //after each image you can position your image by using numbered px units to show a spacific image 
                     a#twitter {
                         background: url("../images/socials-color.png") 0px 0px;
                     }
+
                     a#facebook {
                         background: url("../images/socials-color.png")50px 0px;
                     }
+
                     a#instagram {
                         background: url("../images/socials-color.png")100px 0px;
                     }
@@ -286,9 +309,11 @@ div {
                     a#twitter:hover {
                         background: url("../images/socials-bw.png") 0px 0px;
                     }
+
                     a#facebook:hover {
                         background: url("../images/socials-bw.png")50px 0px;
                     }
+
                     a#instagram:hover {
                         background: url("../images/socials-bw.png")100px 0px;
                     }
@@ -297,3 +322,150 @@ div {
         }
     }
 }
+
+//page 2 ends here//////////////////////////////////////
+
+//page 3 starts here
+div#container4 {
+    width: 100vw;
+    height: 250vh;
+    background-image: linear-gradient(#d1d8e0, rgb(129, 146, 157), rgb(95, 108, 122), rgb(52, 64, 65));
+
+    h1.heading {
+        //using css color hsl 
+        color: rgb(255, 255, 255);
+        font-size: 4em;
+        text-align: center;
+        padding: 50px;
+        text-decoration: underline;
+    }
+
+    h2.explore {
+        color: white;
+        font-weight: 400;
+        text-align: center;
+        //using word spacing to add spacing to sentence for better readability
+        word-spacing: 2px;
+        padding: 10px;
+    }
+
+    //using css pseudo elements ::first-line to target first sentence of a paragraph
+    ::first-line {
+        color: #b8a33f;
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    // figure caption example
+    section {
+        margin-left: 100px;
+        figure {
+            justify-content: center;
+            align-items: center;
+            padding: 1em 1em 1em 1em;
+            background-color: white;
+            display: inline-block;
+            width: 25%;
+            margin: 2em 2em 2em 2em;
+            transition: all 200ms ease-in-out;
+
+            img {
+                width: 100%;
+
+            }
+            img.theater {
+                height: 470px;
+            }
+            img.citypass {
+                height: 440px;
+            }
+
+            figcaption {
+                background-color: white;
+                padding: 1.5em;
+                font-size: 0.75em;
+                text-align: center;
+                
+            }
+        }
+
+        figure:hover {
+            //adds shawdow when you hover over images 
+            box-shadow: 10px 10px 20px rgb(8, 47, 87);
+            //scales up when you hover over
+            transform: scale(1.2);
+            // border: 1px solid rgb(0, 0, 0);
+        }
+    }
+}
+
+div {
+    footer.footer3 {
+        width: 100%;
+        height: 12.5vh;
+
+        div.copy3 {
+
+            h3 {
+                position: absolute;
+                color: #b8a33f;
+                font-weight: 400;
+                left: 45%;
+                top: 267%;
+            }
+
+            ul {
+                position: absolute;
+                display: flex;
+                list-style-type: none;
+                top: 266%;
+                left: 80%;
+
+                li {
+                    width: 50px;
+                    height: 50px;
+
+                    //need a element to propery display items by using display block
+                    a {
+                        width: 50px;
+                        height: 50px;
+                        //block needed otherwise content will not show
+                        display: block;
+                        transition: all 200ms linear;
+
+                    }
+
+                    //image sprites example
+                    //after each image you can position your image by using numbered px units to show a spacific image 
+                    a#twitter {
+                        background: url("../images/socials-color.png") 0px 0px;
+                    }
+
+                    a#facebook {
+                        background: url("../images/socials-color.png")50px 0px;
+                    }
+
+                    a#instagram {
+                        background: url("../images/socials-color.png")100px 0px;
+                    }
+
+                    //hover state
+
+                    a#twitter:hover {
+                        background: url("../images/socials-bw.png") 0px 0px;
+                    }
+
+                    a#facebook:hover {
+                        background: url("../images/socials-bw.png")50px 0px;
+                    }
+
+                    a#instagram:hover {
+                        background: url("../images/socials-bw.png")100px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//page 3 ends here///////////////////////////////////
